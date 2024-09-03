@@ -1,0 +1,36 @@
+.Question{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .Question_title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .Question_content{
+            font-size: 16px;
+            font-weight: 400;
+        }
+}
+
+.Question_sample{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .Question_sample_title{
+        font-weight: 500;
+    }
+    .Question_sample_body{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 4px;
+        .Question_sample_body_items{
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}

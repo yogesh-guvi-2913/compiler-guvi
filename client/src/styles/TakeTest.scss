@@ -1,0 +1,177 @@
+.container1 {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.right-panel {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Language Selector Styling */
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.code-editor {
+    flex: 1;
+    padding: 20px;
+    margin-top: 40px;
+    /* Adds space for the language selector */
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.codemirror{
+    width: 100%;
+    height: 100% !important;
+}
+
+
+.code-editor-text{
+    width: 100%;
+    border: 1px solid grey;
+}
+
+
+.bottom-panel {
+    transition: height 0.4s ease;
+    height: 80px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+}
+
+.bottom-panel.expanded {
+    height: 50vh;
+    .btn_down{
+        color: gray;
+    }
+        .btn_down:hover {
+            background-color: transparent;
+            color: gray;
+        }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px !important;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn_down{
+    color: grey;
+    background-color: transparent;
+}
+
+
+.btn_down:hover {
+    background-color: unset;
+    color: grey;
+}
+
+
+
+.button_in{
+    display: flex;
+    gap: 10px;
+}
+
+.test-case-output {
+    margin-top: 10px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.run_btn{
+    background-color: #02b702;
+}
+
+.run_btn:hover{
+    background-color: #02b702;
+}
+
+.sub_btn{
+    color: #02b702;
+    border: 2px solid #02b702;
+    background-color: unset;
+    font-weight: 500;
+}
+
+.sub_btn:hover{
+    background-color: unset;
+}
+
+.cancel1{
+    
+    color: green !important;
+        border: 2px solid green !important;
+        text-transform: capitalize !important;
+}
+
+.Submit1{
+    color: white !important;
+        background-color: green !important;
+        text-transform: capitalize !important;
+}
+
+.MuiDialogActions-root{
+    padding: 8px 8px 25px 8px !important;
+}
+
+@media only screen and (max-width:768px) {
+    .container1{
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-panel{
+        width: 100%;
+    }
+
+    .right-panel{
+        width: 100%;
+        height: 80vh;
+    }
+
+        .bottom-panel.expanded {
+            height: 40vh;
+        }
+}
